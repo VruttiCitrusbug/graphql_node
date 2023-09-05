@@ -1,0 +1,5 @@
+For graphsql
+npm install graphql --save
+
+For Express-graphsql
+npm install express express-graphql graphql --save
