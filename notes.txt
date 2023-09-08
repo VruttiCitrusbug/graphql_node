@@ -3,3 +3,11 @@ npm install graphql --save
 
 For Express-graphsql
 npm install express express-graphql graphql --save
+
+For server
+npm i @apollo/server
+npm install graphql
+npm i body-parser
+npm i cors
+npm i @types/axios
+npm i axios
