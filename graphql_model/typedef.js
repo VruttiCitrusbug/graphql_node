@@ -18,14 +18,9 @@ type Query{
     getuser(amount:Int): [user]
 }
 
-type Multation{
+type Mutation {
     createuser(userinput: userinput): user!
     deleteuser(ID:ID!): Boolean
-    edituser(ID:ID!,userinput:edituserinput):
+    edituser(ID:ID!,userinput:userinput): user
 }
-
-
 `
-// input edituserinput{
-    
-// }

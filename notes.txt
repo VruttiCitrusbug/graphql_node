@@ -11,3 +11,51 @@ npm i body-parser
 npm i cors
 npm i @types/axios
 npm i axios
+
+
+Add user
+mutation createuser($userinput: userinput) {
+  createuser(userinput: $userinput) {
+    name
+    email
+    password
+  }
+}
+
+variable_add
+
+{
+  "userinput": {
+    "name": "vrutti",
+    "email": "vrutti.citrusbug@gmail.com",
+    "password": "vrutti"
+  }
+}
+
+Update user
+
+mutation EditUser($id:ID!,$userinput: userinput) {
+  edituser(ID:$id,userinput: $userinput){
+    name
+    email
+    password
+  }
+}
+variable_update
+{
+  "id": "64ff1fe0e352898055f042ab",
+  "userinput":{
+    "name":"dhiren"
+  }
+}
+
+
+Deleteuser
+mutation DeleteUser($id:ID!) {
+  deleteuser(ID:$id)
+}
+
+variable_delete
+{
+  "id": "64ff1fe0e352898055f042ab"
+}
